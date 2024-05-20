@@ -174,31 +174,7 @@
       <i class="icon-play marker" style="display: none"></i>
     </article>
 
-    <script>
-      (function(d, s, id) {
-        var js, tjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) { return; }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = (window.location.hostname === 'promptr.tv')
-          ? 'https://promptr.tv/remote/socket.io/socket.io.js'
-          : 'http://' + window.location.hostname + ':3000/socket.io/socket.io.js';
-        tjs.parentNode.insertBefore(js, tjs);
-      }(document, 'script', 'teleprompter-socket'));
-    </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S1R98WW400"></script>
-
-    <script>
-      window['ga-disable-G-S1R98WW400'] = (window.location.hostname !== 'promptr.tv');
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', 'G-S1R98WW400', {
-        'anonymize_ip': true,
-        'allow_google_signals': false
-      });
-    </script>
-
+    
     <script src="assets/js/plugins.v122.js"></script>
     <script src="assets/js/script.v122.js"></script>
 
